@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topology Visualiser</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/228f400cae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="drawingDiv">
+	<canvas id="drawingCanvas"></canvas>
+    <!-- <button id="drawButton" onclick="drawTopology()" style="float:right;">Draw</button> -->
+</div>
+<div id="displayDiv">
+    <h1><i class="fa fa-arrow-left"></i> draw topology lines</h1>
+
+    <div style="position:absolute; bottom:0;">
+        <h1><i class="fa fa-arrow-down"></i> view topology from the side</h1>
+        <h2 style="margin: 0px 0px 20px 250px">(rotate with slider or arrow keys)</h2>
+        <input type="range" min="0" max="360" value="0" id="rotateSlider" oninput="sliderChanged()">
+        <output id="sliderOutput">0</output> degrees rotated
+        <button id="clearButton" onclick="clearAll()" style="float:right;">Clear</button>
+        <canvas id="displayCanvas"></canvas>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>

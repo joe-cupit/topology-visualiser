@@ -1,0 +1,76 @@
+* {
+    font-family: sans-serif;
+    font-size: 1.05em;
+}
+
+h1 {
+    font-size: 2em;
+    color: blueviolet;
+    margin: 0;
+}
+
+h2 {
+    color: blueviolet;
+    margin: 0;
+}
+
+#drawingDiv {
+    width: 800px;
+    height: 800px;
+    float: left;
+    padding-right: 50px;
+}
+#drawingCanvas {
+    border: 3px solid black;
+    border-radius: 5px;
+    background: #faf7fc;
+}
+
+#displayDiv {
+    width: 800px;
+    height: 810px;
+    float:left;
+    position: relative;
+}
+#displayCanvas {
+    border: 3px solid black;
+    border-radius: 5px;
+    background: #faf7fc;
+    margin-top: 10px;
+}
+
+#rotateSlider {
+	width: 500px;
+    accent-color: blueviolet;
+}
+
+
+
+/* https://getcssscan.com/css-buttons-examples */
+#clearButton {
+    appearance: none;
+    background-color: #a249f5;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+#clearButton:hover {
+  background-color: #8a2be2;
+}
